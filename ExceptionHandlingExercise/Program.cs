@@ -30,9 +30,9 @@ namespace ExceptionHandlingExercise
                     int temp = int.Parse(str);
                     numbers.Add(temp);
                 }
-                catch (Exception)
+                catch (Exception e)
                 {
-                    Console.WriteLine($"Unable to Parse '{character}'"); //character will be the name of each item in your collection
+                    Console.WriteLine($"Unable to Parse '{character}' the problem is {e.Message}"); //character will be the name of each item in your collection
                 }
             }
             
